@@ -44,7 +44,45 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
+.about{
+  width: 100%;
+  height: 100vh;
+}
+.about-holder{
+  margin: auto;
+  display: flex;
+  align-items:center;
+  justify-content:space-evenly;
+  height: 100%;
+  width: 1000px;
+}
+.plantimages{
+  position: relative;
+}
+.pp1{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.about-text{
+  color: black;
+  width: 40%;
+}
+.about-text h1{
+  font-family: 'Sacred Valley';
+  text-align: left;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: .1em;
+  font-weight: 1000;
+}
+.about-text p{
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: .1em;
+  font-weight: 200;
+}
 body{
   height: auto;
   background: #fff9fc;
@@ -207,22 +245,6 @@ section.two{
   animation: fadeIn2 1s ease-out forwards;
   animation-delay: .8s;
 }
-.newhero{
-  z-index: 2;
-  font-family: 'Sacred Valley';
-  font-style: normal;
-  color: rgba(250, 250, 250, 0.938);
-  font-size: clamp(3em, 5.5vw, 5.5em);
-  /* font-size: 5.5em; */
-  font-weight: 100;
-  line-height: 95%;
-  text-align: left;
-  word-spacing: 0em;
-  line-height: .85em;
-  opacity: 0;
-  animation: fadeIn2 1s ease-out forwards;
-  animation-delay: .8s;
-}
 
 .gradient-circ{
   margin-top: -25%;
@@ -334,6 +356,7 @@ footer{
 .newsletter {
   width: 100vw;
   margin: auto;
+  padding-top: 2%;
   height: 23vh;
 }
 .newsletter form{
@@ -405,7 +428,7 @@ input[type=text]:focus {
   position: relative;
   left:3%;
   background: #e6ba6800;
-  border-radius: 10px;
+  border-radius: 100px;
   border: 2px solid #E6B968;
   box-sizing: border-box;
   color: #E6B968;
@@ -494,6 +517,7 @@ a {
     margin-left: 6px;
 }
 .logo{
+  transition: .2s cubic-bezier(0.1, 0.2, 0.3, 0.2);
   width: 17%;
   min-width: 250px;
   color: white;
@@ -507,7 +531,7 @@ a {
 }
 .logo:hover{
   /* color:#E6B968; */
-  filter: brightness(.45);
+  /* filter: brightness(.45); */
   width: 20vw;
   letter-spacing: .1em;
 }
@@ -515,7 +539,7 @@ a {
   margin-right: 10%;
   overflow-x:visible;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 25px;
+  font-size: 40px;
   color: white;
   cursor: pointer;
   position: relative;
@@ -529,11 +553,12 @@ a {
 .cart-item-qty{
   position: absolute;
   right: -5px;
-  font-size: 12px;
+  top: -2px;
+  font-size: 20px;
   color: #eee;
   background-color: #E6B968;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
@@ -794,7 +819,7 @@ hr {
 .empty-cart{
   font-family: 'Poppins', sans-serif;
   width: 455px;
-  color: #e6ba687e;
+  color: #eec578;
   text-align:center;
   margin-top: 20%;
 }
@@ -873,7 +898,7 @@ padding: 20px 10px;
 .btn{
   font-family: 'Poppins', sans-serif;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   padding: 10px 12px;
   border-radius: 15px;
   border: none;
@@ -979,20 +1004,34 @@ padding: 20px 10px;
 .product-detail-desc h4{
   margin-top: 10px;
 }
-.product-detail-desc p{
-  margin-top: 10px;
+.stats span{
+  margin-top: 20px;
+  width: 90%;
+  text-align: left;
+}
+.stats_holder{
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 25px;
+  background: #edd6cd;
 }
 .details{
   width: 50%;
+}
+.details-h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
 }
 .reviews p{
   color: #324d67;
   margin-top: 0px;
 }
 .product-detail-desc .price{
-  padding-top: 0px;
+  margin-top: -40px;
   font-weight: 700 ;
-  font-size: 26px;
+  font-size: 30px;
   color:#E6B968;
 }
 .price .old-price, .product-price .old-price, .price .old-price{
@@ -1009,10 +1048,19 @@ padding: 20px 10px;
   display: flex;
   gap: 30px;
 }
+.product-detail-desc h1{
+  font-family: 'Sacred Valley';
+  text-align: left;
+  color: #000000;
+  font-size: 55px;
+  letter-spacing: .1em;
+  font-weight: 1000;
+}
 .buttons .add-to-cart{
   user-select: none;
   padding: 10px 20px;
   border: 1px solid #E6B968 ;
+  border-radius: 100px;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -1027,6 +1075,7 @@ padding: 20px 10px;
   transform:scale(1.1,1.1)
 }
 .buttons .buy-now{
+  border-radius: 100px;
   width: 200px;
   text-align: center;
   padding: 10px 20px;
@@ -1044,8 +1093,11 @@ padding: 20px 10px;
   transform:scale(1.1,1.1)
 }
 .quantity-desc{
+  
+  border-radius: 10px;
   border: 1px solid gray;
   padding: 6px;
+
 }
 .quantity-desc span{
   font-size: 16px;

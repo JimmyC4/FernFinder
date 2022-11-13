@@ -11,6 +11,7 @@ const ProductDetails = ({ product, products }) => {
 
   return (
     <div>
+      
         <div className='product-detail-container'>
             <div>
                 <div className='image-container'>
@@ -19,6 +20,7 @@ const ProductDetails = ({ product, products }) => {
                 <div className='small-image-container'>
                   {image?.map((item, i) => (
                     <img
+                    key={i}
                     src={urlFor(item)}
                       className={i == index ? 'small-image selected-image' 
                     : 'small-image'}
@@ -29,7 +31,7 @@ const ProductDetails = ({ product, products }) => {
             </div>
 
             <div className='product-detail-desc'>
-              <h1>{name}</h1>
+              <h1>{name}</h1><p className='price'>${price}</p>
               {/* <div className='reviews'>
                 <div>
                   <AiFillStar />
@@ -40,28 +42,26 @@ const ProductDetails = ({ product, products }) => {
                 </div>
                 <p>(20)</p>
               </div> */}
-              <h4>Details:</h4>
+              <h4 className='details-h4'>Details:</h4>
               <p className='details'>{details}</p>
 
 
               <div className='stats_holder'>
                 <div className="stats">
                   <img src="/images/light.png" alt="image" className="" />
-                  <p>{light}</p>
+                  <span>{light}</span>
                 </div>
                 
                 <div className="stats">
                   <img src="/images/water.png" alt="image" className="" />
-                  <p>{water}</p>
+                  <span>{water}</span>
                 </div>
 
                 <div className="stats">
                   <img src="/images/care.png" alt="image" className="" />
-                  <p>{care}</p>
+                  <span>{care}</span>
                 </div>
               </div>
-
-              <p className='price'>${price}</p>
               <div className='quantity'>
                 <h3>Quantity:</h3>
                 <p className='quantity-desc'>
