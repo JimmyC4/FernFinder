@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 import { urlFor } from '../lib/client';
 
 function Product({ product: { image, name, slug, price } }) {
   return (
-    <Fade bottom distance="20%" duration="800">
+    // <Fade bottom distance="20%" duration="800">
     <div>
       <Link href={`/product/${slug.current}`}>
       <div className='product-card'>
@@ -20,7 +20,7 @@ function Product({ product: { image, name, slug, price } }) {
       </div>
       </Link>
     </div>
-    </Fade>
+    // </Fade>
   )
 }
 
