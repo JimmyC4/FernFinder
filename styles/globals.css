@@ -95,7 +95,7 @@ body{
 .login_page{
   width: 100%;
   height: 100vh;
-  background: #FFFBF1;
+  background: #fff9fc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,14 +116,18 @@ body{
   display: flex;
   align-items: center;
   text-align: center;
-  border-radius: 15px;
-  padding: 20px 50px;
+  border-radius: 100px;
+  padding: 15px 40px;
   background-color: #E6B968;
   color: white;
   border: none;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 500;
   cursor: pointer;
+  margin-bottom: 4%;
+}
+.signin_button:hover{
+  transform: scale(1.025,1.025);
 }
 .signin_button svg{
   margin-right: 5px;
@@ -212,7 +216,7 @@ section.two{
   /* margin-left: 20%; */
 }
 .container1{
-  padding-top: 80px;
+  padding-top: 110px;
   transition: .2s cubic-bezier(0.1, 0.2, 0.3, 0.2);
   display: flex;
   align-items: center;
@@ -229,7 +233,7 @@ section.two{
   position: absolute;
   z-index: -10;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +241,7 @@ section.two{
 .bg-holder img{
   filter: saturate(.9);
   
-  height: 124vh;
+  height: 138vh;
 }
 .hero-text{
   z-index: 10;
@@ -350,9 +354,12 @@ section.two{
 
 footer{
   overflow-y: visible;
-  background-color: #3B523D;
-  background: linear-gradient(25deg, #2c3d2e , #456e49);;
-  /* background-image: url(/images/footer.png); */
+  /* background-color: #3B523D;
+  background: linear-gradient(25deg, #2c3d2e , #456e49); */
+  background-image: url(/images/footer.png);
+  background-position: center;
+  background-size:120%;
+  background-repeat: no-repeat;
   width: 100vw;
   height: auto;
   min-height: 25vh;
@@ -378,6 +385,7 @@ footer img{
   min-height: 100%
 }
 .footer-container{
+  background: url(/public/images/footer.png);
   font-family: 'Poppins', sans-serif;
   color: #ececec;
   text-align: center;
@@ -646,6 +654,12 @@ a {
   font-weight: 500;
   cursor: pointer;
   z-index:10000 !important;
+}
+.quantity h3{
+  font-weight: 300;
+}
+.num{
+  font-weight: 300;
 }
 
 .hero-banner-container h3{
@@ -928,7 +942,7 @@ padding: 20px 10px;
   margin: 40px;
   margin: auto;
   margin-top: 12%;
-  color: #324d67;
+  color: #101010;
   width: 80%;
   font-size: 15px;
 }
@@ -947,15 +961,19 @@ padding: 20px 10px;
 .stats_holder{
   /* border: solid red 3px; */
   padding-top: 7%;
-  width: 100%;
+  width: 90%;
   display: flex;
 }
 .stats img{
   width: 60px;
 }
 .stats p{
+  font-weight: 100;
   width: 80%;
   text-align: center;
+}
+.stats span{
+  color: rgba(0, 0, 0, 0.73);
 }
 /* .dot {
   z-index: .5;
@@ -970,7 +988,7 @@ padding: 20px 10px;
 
 .product-detail-image{
   font-family: 'Poppins', sans-serif;
-  border-radius: 1px;
+  border-radius: 2px;
   background-color: #ebebeb;
   width: 400px;
   height: 400px;
@@ -1022,21 +1040,23 @@ padding: 20px 10px;
   background: #edd6cd;
 }
 .details{
-  width: 50%;
+  width: 100%;
+  margin-top: .5%;
 }
 .details-h4{
   font-family: 'Poppins', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: 300;
   margin: 0;
   padding: 0;
 }
 .reviews p{
-  color: #324d67;
+  color: #141414;
   margin-top: 0px;
 }
 .product-detail-desc .price{
-  margin-top: -40px;
-  font-weight: 700 ;
+  margin-top: -30px;
+  font-weight: 500 ;
   font-size: 30px;
   color:#E6B968;
 }
@@ -1068,17 +1088,17 @@ padding: 20px 10px;
   border: 1px solid #E6B968 ;
   border-radius: 100px;
   margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  background-color: white;
+  font-size: 1em;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0);
   color: #E6B968;
   cursor: pointer;
   width: 200px;
    transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 .buttons .add-to-cart:hover{
-  transform:scale(1.1,1.1)
+  transform:scale(1.025,1.025)
 }
 .buttons .buy-now{
   border-radius: 100px;
@@ -1089,18 +1109,18 @@ padding: 20px 10px;
   color: white;
   border: none;
   margin-top: 40px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 300;
   cursor: pointer;
    transform: scale(1, 1);
-  transition: transform 0.5s ease;
+  transition: transform 0.2s ease;
 }
 .buttons .buy-now:hover{
-  transform:scale(1.1,1.1)
+  transform:scale(1.025,1.025)
 }
 .quantity-desc{
   
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid gray;
   padding: 6px;
 
@@ -1132,7 +1152,7 @@ padding: 20px 10px;
 .maylike-products-wrapper h2{
   text-align: center;
   margin: 50px;
-  color: #324d67;
+  color: #161616;
 
   font-size: 28px;
   font-weight: 300;
@@ -1204,7 +1224,10 @@ margin-top: 160px;
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
+  footer{
+    background-size:300%;
+  }
   .about-holder{
     flex-direction: column;
   }
@@ -1219,7 +1242,7 @@ margin-top: 160px;
   }
   .hero-two{
     position: absolute;
-    top: 550px;
+    top: 600px;
     margin: auto;
     display: flex;
     align-items:baseline;
@@ -1323,7 +1346,8 @@ margin-top: 160px;
     width: 150px;
   }
   .product-detail-container{
-    margin: 20px;
+    padding-top: 25%;
+    margin: auto;
   }
 
 .item-desc .flex{
@@ -1332,8 +1356,6 @@ margin-top: 160px;
 .top{
   flex-wrap: wrap;
   gap: 10px;
-
-
 }
 .item-desc .bottom{
   margin-top: 30px;
