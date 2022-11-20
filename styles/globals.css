@@ -464,8 +464,6 @@ a {
   backdrop-filter: blur(2px);
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: .25%;
-  padding-bottom: .25%;
   background-color: #00000027;
   display: flex;
   justify-content: space-between;
@@ -480,8 +478,8 @@ a {
 .navbar-container.active{
   /* mix-blend-mode:difference; */
   background-color: #0000004b;
-  padding-top: -.1%;
-  padding-bottom: -.1%;
+  padding-top: -.3%;
+  padding-bottom: -.3%;
   font-size: 1em;
 }
 .marquee-text{
@@ -518,10 +516,10 @@ a {
 }
 .logo{
   transition: .2s cubic-bezier(0.1, 0.2, 0.3, 0.2);
-  width: 17%;
+  width: 10%;
   min-width: 250px;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 300;
 }
 .logo img{
@@ -539,7 +537,7 @@ a {
   margin-right: 10%;
   overflow-x:visible;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   cursor: pointer;
   position: relative;
@@ -553,12 +551,12 @@ a {
 .cart-item-qty{
   position: absolute;
   right: -5px;
-  top: -2px;
-  font-size: 20px;
+  top: -3px;
+  font-size: 15px;
   color: #eee;
   background-color: #E6B968;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   text-align: center;
   font-weight: 600;
