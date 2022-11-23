@@ -215,6 +215,33 @@ section.two{
   margin-bottom: 6%;
   /* margin-left: 20%; */
 }
+.video{
+    padding: 2%;
+    padding-bottom: 2%;
+    width: 38vw;
+    height: 40vh;
+}
+.video_container{
+  padding: 2% 0 15% 0;
+  flex-wrap: wrap;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media screen and (max-width:900px) {
+  .video{
+    padding: 4%;
+    padding-bottom: 4%;
+    width: 90vw;
+    height: 40vh;
+}
+  .video_container{
+    padding: 20% 0 50% 0;
+    flex-direction: column;
+  }
+}
 .container1{
   padding-top: 110px;
   transition: .2s cubic-bezier(0.1, 0.2, 0.3, 0.2);
@@ -610,7 +637,23 @@ a {
   transition: transform 0.2s ease;
   box-shadow: none !important;
 }
-
+.padding-top-20{
+  padding-top: 20%;
+}
+.center_container{
+  text-align: center;
+  width: 100%;
+  margin:auto;
+  height: auto;
+}
+.heading{
+  font-family: 'Sacred Valley';
+  font-style: bold;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: .025em;
+  line-height: 1em;
+}
 .product-name{
   width: 300px;
   font-family: 'Poppins', sans-serif;
