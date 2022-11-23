@@ -27,12 +27,12 @@ const Home = ({ products, bannerData }) => {
       <div className='video_container'>
         <div className='video'>
           <Iframe
-              url="https://www.youtube.com/embed/pTCsabfYWJA?autoplay=0&mute=0&rel=0&controls=0&showinfo=0&modestbranding=1&VQ=HD1080&loop=1}" loop="1" frameBorder="1" allowFullScreen position="relative" playsInline
+              url="https://www.youtube.com/embed/LZhnCxG5c6s?autoplay=0&mute=0&rel=0&controls=0&showinfo=0&modestbranding=1&VQ=HD1080&loop=1}" loop="1" frameBorder="0" allowFullScreen position="relative" playsInline
               width="100%" height="100%" />
         </div>
         <div className='video'>
           <Iframe
-              url="https://www.youtube.com/embed/LZhnCxG5c6s?autoplay=0&mute=0&rel=0&controls=0&showinfo=0&modestbranding=1&VQ=HD1080&loop=1}" loop="1" frameBorder="0" allowFullScreen position="relative" playsInline
+              url="https://www.youtube.com/embed/pTCsabfYWJA?autoplay=0&mute=0&rel=0&controls=0&showinfo=0&modestbranding=1&VQ=HD1080&loop=1}" loop="1" frameBorder="1" allowFullScreen position="relative" playsInline
               width="100%" height="100%" />
         </div>
         <div className='video'>
